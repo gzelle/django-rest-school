@@ -7,6 +7,7 @@ router = routers.DefaultRouter()
 router.register('subjects', views.SubjectView)
 router.register('classes', views.ClassView)
 router.register('courses', views.CourseView)
+router.register('users', views.UserView)
 router.register('students', views.StudentView)
 router.register('teachers', views.TeacherView)
 
