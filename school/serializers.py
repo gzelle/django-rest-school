@@ -16,6 +16,7 @@ class ClassSerializer(serializers.HyperlinkedModelSerializer):
         model = Class
         fields = ('url', 'id', 'name', 'max_capacity', 'subject', 'teacher', 'student_count')
 
+    # Show student count
     def get_student_count(self, instance):
         return instance.student_set.all().count()
 
